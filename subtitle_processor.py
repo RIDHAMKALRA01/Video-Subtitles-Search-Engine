@@ -10,7 +10,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 class SubtitleProcessor:
     def __init__(self):
-        self.api_key = "AIzaSyBlzja3fpx2AntAEa3-n2sueGv1mFqWfQc"
+        self.api_key = "API-KEY"
         genai.configure(api_key=self.api_key)  
         self.chroma_client = chromadb.PersistentClient(path="./subtitle_db")
         
